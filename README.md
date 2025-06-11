@@ -20,23 +20,34 @@ custom-reconnaissance-tool
 
 ## ⚙️ Installation
 
-First, install the required Python libraries:
 
-# Requirements
+Installation
+1. Clone the repository
+git clone 
 
+2. Set up a virtual environment (optional but recommended)
+python3 -m venv venv
+source venv/bin/activate
+
+3. libraries to install 
 Python 3.7+
 Modules: argparse, socket, subprocess, requests, dnspython, python-whois
 External tool: whatweb
 
-# Example Workflow
-# run the script:
-bash
-python main.py --domain example.com --whois --dns --subdomains --ports --banner --tech --verbose
+# 🚀 Usage
+python main.py
+You'll be prompted to enter a domain (e.g., example.com). The tool will then display:
+
+# DNS records
+Service banners on common ports (21, 22, 80, 443, 8080)
+Technologies detected on the website
+# 📂 Modules
+main.py: Entry point to the program
+dns_enum.py: Handles DNS lookups
+banner_grabber.py: Grabs banners from services
+tech_detect.py: Uses Wappalyzer to identify technologies
 
 
-📁 Output:
-
-Saved logs in logs/tool.log
-
-HTML report in reports/recon_report_example.com_<timestamp>.html
+📜 License
+This project is licensed under the MIT License. Feel free to modify and use it for educational or ethical penetration testing purposes.
 
