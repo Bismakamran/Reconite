@@ -1,0 +1,62 @@
+[2025-06-08 20:11:20,785] INFO: Logging started. Level: DEBUG
+[2025-06-08 20:11:20,786] INFO: Starting recon on domain: example.com
+[2025-06-08 20:11:20,787] INFO: Performing WHOIS lookup...
+[2025-06-08 20:11:22,539] DEBUG: WHOIS data retrieved for example.com
+[2025-06-08 20:11:22,539] INFO: Performing DNS enumeration...
+[2025-06-08 20:11:24,567] DEBUG: DNS A records found for example.com: ['23.192.228.80', '96.7.128.175', '23.192.228.84', '23.215.0.138', '23.215.0.136', '96.7.128.198']
+[2025-06-08 20:11:26,593] DEBUG: DNS MX records found for example.com: ['0 .']
+[2025-06-08 20:11:28,637] DEBUG: DNS TXT records found for example.com: ['"_k2n1y4vw3qtb4skdx9e7dxt97qrmmq9"', '"v=spf1 -all"']
+[2025-06-08 20:11:30,665] DEBUG: DNS NS records found for example.com: ['b.iana-servers.net.', 'a.iana-servers.net.']
+[2025-06-08 20:11:30,671] INFO: Enumerating subdomains...
+[2025-06-08 20:11:30,676] DEBUG: Starting new HTTPS connection (1): crt.sh:443
+[2025-06-08 20:11:31,488] DEBUG: https://crt.sh:443 "GET /?q=%25.example.com&output=json HTTP/1.1" 200 None
+[2025-06-08 20:11:31,489] DEBUG: Subdomains found for example.com: 11
+[2025-06-08 20:11:31,490] INFO: Scanning common ports...
+[2025-06-08 20:11:31,500] DEBUG: IP for example.com resolved to 96.7.128.198
+[2025-06-08 20:11:36,825] INFO: Port 80 is open on example.com
+[2025-06-08 20:11:40,115] INFO: Port 443 is open on example.com
+[2025-06-08 20:11:43,138] INFO: Grabbing banners from open ports...
+[2025-06-08 20:11:43,660] DEBUG: Banner on port 80 for example.com: HTTP/1.0 400 Bad Request
+Server: AkamaiGHost
+Mim
+[2025-06-08 20:11:44,167] WARNING: Banner grab failed on port 443 for example.com: [WinError 10054] An existing connection was forcibly closed by the remote host
+[2025-06-08 20:11:44,168] INFO: Detecting web technologies...
+[2025-06-08 20:11:47,041] DEBUG: WhatWeb detection output for example.com: http://example.com/ [200 OK] IP[96.7.128.198]  Title[Example Domain]  
+From Shodan Internal DB: Por
+[2025-06-08 20:11:47,044] INFO: Report saved to reports/recon_report_example.com_2025-06-08_20-11-47.html
+[2025-06-09 02:39:19,105] INFO: Logging started. Level: DEBUG
+[2025-06-09 02:39:19,107] INFO: Starting recon on domain: example.com
+[2025-06-09 02:39:19,108] INFO: Performing WHOIS lookup...
+[2025-06-09 02:39:21,256] DEBUG: WHOIS data retrieved for example.com
+[2025-06-09 02:39:21,256] INFO: Performing DNS enumeration...
+[2025-06-09 02:39:21,274] DEBUG: DNS A records found for example.com: ['23.215.0.136', '23.215.0.138', '23.192.228.80', '96.7.128.198', '96.7.128.175', '23.192.228.84']
+[2025-06-09 02:39:21,287] DEBUG: DNS MX records found for example.com: ['0 .']
+[2025-06-09 02:39:21,297] DEBUG: DNS TXT records found for example.com: ['"v=spf1 -all"', '"_k2n1y4vw3qtb4skdx9e7dxt97qrmmq9"']
+[2025-06-09 02:39:21,517] DEBUG: DNS NS records found for example.com: ['b.iana-servers.net.', 'a.iana-servers.net.']
+[2025-06-09 02:39:21,519] INFO: Enumerating subdomains...
+[2025-06-09 02:39:21,529] DEBUG: Starting new HTTPS connection (1): crt.sh:443
+[2025-06-09 02:39:32,400] ERROR: Subdomain enumeration failed for example.com: HTTPSConnectionPool(host='crt.sh', port=443): Read timed out. (read timeout=10)
+[2025-06-09 02:39:32,402] INFO: Scanning common ports...
+[2025-06-09 02:39:32,411] DEBUG: IP for example.com resolved to 23.192.228.84
+[2025-06-09 02:39:37,657] INFO: Port 80 is open on example.com
+[2025-06-09 02:39:40,914] INFO: Port 443 is open on example.com
+[2025-06-09 02:39:43,930] INFO: Grabbing banners from open ports...
+[2025-06-09 02:39:44,440] DEBUG: Banner on port 80 for example.com: HTTP/1.0 400 Bad Request
+Server: AkamaiGHost
+Mim
+[2025-06-09 02:39:44,933] WARNING: Banner grab failed on port 443 for example.com: [WinError 10054] An existing connection was forcibly closed by the remote host
+[2025-06-09 02:39:44,935] INFO: Detecting web technologies...
+[2025-06-09 02:39:44,938] ERROR: Tech detection failed or WhatWeb not installed: [WinError 2] The system cannot find the file specified
+[2025-06-09 02:39:44,940] INFO: Report saved to reports/recon_report_example.com_2025-06-09_02-39-44.html
+[2025-06-11 07:08:57,015] INFO: Logging started. Level: INFO
+[2025-06-11 07:08:57,016] INFO: Starting recon on domain: example.com
+[2025-06-11 07:08:57,017] INFO: Performing WHOIS lookup...
+[2025-06-11 07:08:59,491] INFO: Performing DNS enumeration...
+[2025-06-11 07:09:00,072] INFO: Enumerating subdomains...
+[2025-06-11 07:09:01,318] INFO: Scanning common ports...
+[2025-06-11 07:09:06,721] INFO: Port 80 is open on example.com
+[2025-06-11 07:09:10,109] INFO: Port 443 is open on example.com
+[2025-06-11 07:09:13,146] INFO: Grabbing banners from open ports...
+[2025-06-11 07:09:14,819] WARNING: Banner grab failed on port 443 for example.com: [WinError 10054] An existing connection was forcibly closed by the remote host
+[2025-06-11 07:09:14,820] INFO: Detecting web technologies...
+[2025-06-11 07:09:17,947] INFO: Report saved to reports/recon_report_example.com_2025-06-11_07-09-17.html
