@@ -23,7 +23,7 @@ custom-reconnaissance-tool
 
 Installation
 1. Clone the repository
-git clone 
+git clone https://github.com/Bismakamran/Reconite.git
 
 2. Set up a virtual environment (optional but recommended)
 python3 -m venv venv
